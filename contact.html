@@ -17,7 +17,7 @@
     <!-- Responsive Navbar with my name and clickable links to go to my other pages -->
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
-            <a class="navbar-brand" href="#">Chase Edwards</a>
+            <a class="navbar-brand">Chase Edwards</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -38,11 +38,50 @@
     </header>
 
     <main class="container">
-        <h1 class="text-center">Contact</h1>
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Contact</h1>
+            <p class="lead">Please feel free to reach out to me! I am always open to meeting new people and making new professional connections!</p>
+            <hr class="my-4">
+            <p class="lead">My other information/contacts are listed at the bottom of the page!</p>
+          </div>
+
+        <form>
+            <div class="row d-flex justify-content-center mb-4">
+              <div class="col-md-4">
+                <label for="name">Name:</label>
+                <input type="text" id="name" class="form-control">
+              </div>
+                <div class="col-md-4">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="form-control" placeholder="you@example.com">
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mb-4">
+                <div class="col-md-8">
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" class="form-control" placeholder="Subject">
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center mb-4">
+                <div class="col-md-8">
+                    <label for="message">Message:</label>
+                    <input type="text" id="message" class="form-control" placeholder="Message">
+                </div>
+            </div>
+            
+            <div class="row d-flex justify-content-center">
+              <button type="button" class="btn btn-outline-secondary">Send</button>
+            </div>
+            
+            
+          </form>
     </main>
 
     
-    <footer class="text-center bg-light py-4">
+    <footer class="text-center bg-light py-4 mt-5">
+        <h4>Other Contacts:</h4>
         <p>chase.w.edwards9@gmail.com</p>
         <a href="https://www.linkedin.com/in/chase-edwards-80332265/"><i class="fab fa-linkedin fa-2x"></i></a>
         <a href="https://github.com/cwedwards9"><i class="fab fa-github-square text-dark fa-2x"></i></a>
