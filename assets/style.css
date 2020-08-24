@@ -1,8 +1,11 @@
+img {
+    width: 400px;
+}
 
 hr {
     width: 250px;
     height: 3px;
     border: 0;
     background-color: blue;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
