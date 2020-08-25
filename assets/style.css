@@ -9,6 +9,10 @@ footer p {
     font-family: 'Lato', sans-serif;
 }
 
+#footerRow {
+    margin-right: 0px;
+}
+
 
 /* Index Page */
 .aboutPar {
@@ -20,6 +24,10 @@ footer p {
 .aboutTitle {
     font-family: 'Nunito', sans-serif;
     font-size: 30px;
+}
+
+.aboutSec {
+    margin-bottom: 75px;
 }
 
 .pageTitle {
@@ -42,6 +50,8 @@ main.contact p {
 main.contact label {
     font-family: 'Lato', sans-serif;
 }
+
+
 
 
 
