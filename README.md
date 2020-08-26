@@ -66,5 +66,9 @@ Use Bootstrap to create a mobile responsive portfolio
     * The columns take up 4 units each so 8 units altogether with 4 units left of space
 * Screen size smaller than large has each column on its own row
 
-
+### style.css
+* I mainly used this file for font styling, applying my Google Fonts and changing the size, line height
+* I did change the size of all images and made them black and white
+* I had to manually set the right margin to 0 because for some reason, the margin was pushing the width to be much bigger than needed
+* The selectors were for specific element selectors, class selectors, and id selectors that I added in the HTML
 
