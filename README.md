@@ -1,4 +1,4 @@
-# Homework 2: Responsive portfolio
+# Responsive portfolio
 Use Bootstrap to create a mobile responsive portfolio
 
 ## A Few Notes:
