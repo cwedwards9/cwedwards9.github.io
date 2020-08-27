@@ -3,6 +3,12 @@ nav a {
     font-family: 'Lato', sans-serif;
 }
 
+nav {
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 
 /* Footer */
 footer p {
@@ -51,14 +57,16 @@ main.contact label {
     font-family: 'Lato', sans-serif;
 }
 
-
+#btnContact {
+    font-family: 'Lato', sans-serif;
+}
 
 
 
 hr {
-    width: 250px;
+    width: 275px;
     height: 3px;
     border: 0;
-    background-color: blue;
+    background-color: #00B4DB;
     margin-bottom: 35px;
 }
