@@ -18,7 +18,7 @@ Use Bootstrap to create a mobile responsive portfolio
     * I deleted one list item since I only need three
     * I added links to all of the HTML pages
     * I changed the text content to be the names of the pages
-    * I added some margin classes to make the navbar items and the navbar itself spaced out better
+    * I added some margin and padding classes to make the navbar items and the navbar itself spaced out better
 
 ### Footer
 * I created a footer that is consistent on all three HTML pages
@@ -71,4 +71,5 @@ Use Bootstrap to create a mobile responsive portfolio
 * I did change the size of all images and made them black and white
 * I had to manually set the footer's right margin to 0 because for some reason, the margin was pushing the width to be much bigger than needed
 * The selectors were for specific element selectors, class selectors, and id selectors that I added in the HTML
+* I used a color gradient from uiGradients for the background color of the navbar
 
