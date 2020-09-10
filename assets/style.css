@@ -1,3 +1,18 @@
+.pageTitle {
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+}
+
+hr {
+    width: 275px;
+    height: 3px;
+    border: 0;
+    background-color: #00B4DB;
+    margin-bottom: 35px;
+}
+
+
+
 /* Navbar */
 nav a {
     font-family: 'Lato', sans-serif;
@@ -10,6 +25,7 @@ nav {
 }
 
 
+
 /* Footer */
 footer p {
     font-family: 'Lato', sans-serif;
@@ -19,9 +35,10 @@ footer p {
     margin-right: 0px;
 }
 
-i:hover {
+a i:hover {
     opacity: 75%;
 }
+
 
 
 /* Index Page */
@@ -40,15 +57,11 @@ i:hover {
     margin-bottom: 75px;
 }
 
-.pageTitle {
-    font-family: 'Lato', sans-serif;
-    font-size: 50px;
-}
-
-img {
+img.aboutPics {
     filter: grayscale(100%);
     width: 400px;
 }
+
 
 
 /* Contact Page */
@@ -57,19 +70,60 @@ main.contact p {
     line-height: 1.5;;
 }
 
-main.contact label {
-    font-family: 'Lato', sans-serif;
-}
-
-#btnContact {
+main.contact label, #btnContact {
     font-family: 'Lato', sans-serif;
 }
 
 
-hr {
-    width: 275px;
-    height: 3px;
-    border: 0;
-    background-color: #00B4DB;
-    margin-bottom: 35px;
+
+/* Portfolio Page */
+div.animated-item {
+    min-width: 220px;
+    max-width: 400px;
+    width: 100%;
+    background-color: #0083B0;
+    border-radius: 5px;
+    box-shadow: 0;
+}
+
+div.animated-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+div.animated-item i {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    border-radius: 50%;
+    font-size: 34px;
+    color: #0083B0;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #ffffff;
+    text-align: center;
+
+    transform: translate(-50%, -40%) scale(0);
+}
+
+div.animated-item i:hover {
+    opacity: 75%
+}
+
+div.animated-item:hover i{
+    transform: translate(-50%, -50%) scale(1) ;
+    transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+div.animated-item:hover img {
+    opacity: 0.3;
+    filter: grayscale(100%);
+    transition: opacity 0.5s ease-in-out;
+}
+
+h1.projectTitle {
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
 }
