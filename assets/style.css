@@ -60,6 +60,7 @@ a i:hover {
 img.aboutPics {
     filter: grayscale(100%);
     width: 400px;
+    border-radius: 10px;
 }
 
 
@@ -70,8 +71,19 @@ main.contact p {
     line-height: 1.5;;
 }
 
-main.contact label, #btnContact {
+main.contact label {
     font-family: 'Lato', sans-serif;
+}
+
+#btnContact {
+    background-color: transparent;
+    color: #00B4DB;
+    border: 1px solid #00B4DB;
+    font-family: 'Lato', sans-serif;
+}
+#btnContact:hover {
+    background-color: #00B4DB;
+    color: white;
 }
 
 
