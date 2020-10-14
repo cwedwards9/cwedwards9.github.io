@@ -63,6 +63,12 @@ img.aboutPics {
     border-radius: 10px;
 }
 
+@media (max-width: 400px){
+    img.aboutPics {
+        width: 300px;
+    }
+}
+
 
 
 /* Contact Page */
