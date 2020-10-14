@@ -96,11 +96,6 @@ main.contact label {
 
 /* Portfolio Page */
 
-.porfolioPics {
-    min-width: 220px;
-    height: 230px;
-}
-
 div.animated-item {
     min-width: 220px;
     max-width: 400px;
