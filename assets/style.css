@@ -56,6 +56,18 @@ a i:hover {
     opacity: 75%;
 }
 
+.fa-linkedin {
+    color: #0A66C2;
+}
+
+.fa-github-square {
+    color: #141414;
+}
+
+.fa-file-alt {
+    color: #E7E7E7;
+}
+
 
 
 /* Index Page */
