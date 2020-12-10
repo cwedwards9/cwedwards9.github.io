@@ -20,7 +20,7 @@ hr {
 
 /* Navbar */
 nav {
-    background: #2A2E35;
+    background-color: #2A2E35;
 }
 
 nav a {
@@ -124,57 +124,52 @@ main.contact label {
 
 
 /* Portfolio Page */
-div.animated-item {
-    min-width: 220px;
-    max-width: 400px;
-    width: 100%;
-    background-color: #0083B0;
-    border-radius: 5px;
-    box-shadow: 0;
+.card {
+    width: 45vw;
+    border: 1px solid #00B4DB;
+    border-radius: 4px;
+    transition: transform 0.15s ease-in;
 }
 
-div.animated-item img {
-    max-width: 100%;
-    border-radius: 5px;
+@media (max-width: 768px){
+    .card {
+        width: 90vw;
+    }
 }
 
-div.animated-item i {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    border-radius: 50%;
-    font-size: 34px;
-    color: #0083B0;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    background: #ffffff;
-    text-align: center;
-
-    transform: translate(-50%, -40%) scale(0);
+.card:hover {
+    transform: scale(1.01)
 }
 
-div.animated-item i:hover {
-    opacity: 75%
+.card-body {
+    color: white;
+    background-color: #2A2E35;
 }
 
-div.animated-item:hover i{
-    transform: translate(-50%, -50%) scale(1) ;
-    transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    cursor: pointer;
+
+.repo-link {
+    color: #B2BECD;
+    border: 1px solid #454E56;
+    background-color: #454E56;
+    border-radius: 3px;
+    padding: 3px 5px;
+    margin-right: 5px !important;
+}
+.repo-link:hover {
+    color: #B2BECD;
+    opacity: 90%;
+    text-decoration: none;
 }
 
-div.animated-item:hover img {
-    opacity: 0.3;
-    filter: grayscale(100%);
-    transition: opacity 0.5s ease-in-out;
+.app-link {
+    color: #00B4DB;
+    border: 1px solid #222222;
+    background-color: #222222;
+    border-radius: 3px;
+    padding: 3px 5px;
 }
-
-h1.projectTitle {
-    font-family: 'Nunito', sans-serif;
-    font-size: 30px;
-}
-
-img.portfolioPic {
-    height: 250px;
+.app-link:hover {
+    color: #00B4DB;
+    opacity: 80%;
+    text-decoration: none;
 }
