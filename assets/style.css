@@ -173,3 +173,7 @@ main.contact label {
     opacity: 80%;
     text-decoration: none;
 }
+
+.fa-star {
+    color: #FCDC05;
+}
