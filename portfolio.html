@@ -23,30 +23,27 @@
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
-    <title>My Portfolio</title>
+    <title>Chase's Portfolio</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-dark navbar-expand-sm mb-4">
-        <a class="navbar-brand py-3"><i class="fas fa-user-circle mr-2"></i>Chase Edwards</a>
+        <a href="index.html" class="navbar-brand py-3"><i class="fas fa-user-circle mr-2"></i>Chase Edwards</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                  <li class="nav-item mt-1">
-                      <a class="nav-link" href="index.html">About</a>
-                  </li>  
-                  <li class="nav-item mt-1">
-                      <a class="nav-link" href="portfolio.html">Portfolio</a>
-                  </li>
-                  <li class="nav-item mt-1">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                  <li class="nav-item mt-1">
-                    <a class="nav-link" href="./assets/chase-w-edwards-resume.pdf" target="_blank">Resume</a>
-                  </li>
-              </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item mt-1">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+              </li>
+              <li class="nav-item mt-1 ml-3">
+                  <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item mt-1 ml-3">
+                <a class="nav-link" href="./assets/chase-w-edwards-resume.pdf" target="_blank">Resume</a>
+              </li>
+            </ul>
           </div>
         </nav>
     </header>
@@ -55,55 +52,66 @@
       <section class="row d-flex justify-content-center mb-4">
         <div class="col-md-8 text-center">
           <h1 class="mb-4 pageTitle">Portfolio</h1>
-          <p>This portfolio showcases the latest projects that I have completed. Click on a project to go to the repo 
-            which includes a link to the deployed application.
+          <p>This portfolio showcases the latest projects that I have completed. Click on a project to go to the repository
+            or go see the deployed version.
           </p>
           <hr>
         </div>
       </section>
 
-      <section class="row d-flex justify-content-center mb-4">
-        <div class="col-lg-4 d-flex justify-content-center mb-2">
-          <div>
-            <div class="animated-item mb-2">
-              <img src="./assets/popcorn.jpg" class="portfolioPic">
-              <a href="https://github.com/cwedwards9/recommendations-app" target="_blank"><i class="fas fa-folder"></i></a>
+      <section class="row d-flex justify-content-center">
+        <div class="col-md-6 d-flex justify-content-center mb-5">
+          <div class="card">
+            <img src="./assets/budget.jpg" class="card-img-top" alt="A person's hand holding a pencil while typing on a calculator">
+            <div class="card-body">
+              <h5 class="card-title">Budget Tracker</h5>
+              <p class="card-text">A full-stack app used for tracking monthly transactions and bills to pay.</p>
+              <a href="#" class="repo-link"><i class="far fa-folder-open"></i> Repo</a>
+              <a href="#" class="app-link"><i class="fas fa-link"></i> App</a>
             </div>
-            <h1 class="text-center projectTitle">Movie Recommendations</h1>
           </div>
         </div>
-        <div class="col-lg-4 d-flex justify-content-center">
-          <div>
-            <div class="animated-item mb-2">
-              <img src="./assets/weather.jpg" class="portfolioPic">
-              <a href="https://github.com/cwedwards9/weather-dashboard" target="_blank"><i class="fas fa-folder"></i></a>
+        <div class="col-md-6 d-flex justify-content-center mb-5">
+          <div class="card">
+            <img src="./assets/burger.jpg" class="card-img-top" alt="A close up of a burger with the following ingredients in order from top to bottom: a sesame seed bun, sauce, 
+            cheese, two patties, pickles, onions, tomato, lettuce, and more sauce, bottom bun on a clean wood table.">
+            <div class="card-body">
+              <h5 class="card-title">Burger Log</h5>
+              <p class="card-text">An app that logs all of the burgers that a user wishes to eat in a list and the burgers that have been eaten in another.</p>
+              <a href="#" class="repo-link"><i class="far fa-folder-open"></i> Repo</a>
+              <a href="#" class="app-link"><i class="fas fa-link"></i> App</a>
             </div>
-            <h1 class="text-center projectTitle">Weather Dashboard</h1>
           </div>
         </div>
       </section>
 
-      <section class="row d-flex justify-content-center mb-4">
-        <div class="col-lg-4 d-flex justify-content-center mb-2">
-          <div>
-            <div class="animated-item mb-2">
-              <img src="./assets/planner.jpg" class="portfolioPic">
-              <a href="https://github.com/cwedwards9/day-planner" target="_blank"><i class="fas fa-folder"></i></a>
+      <section class="row d-flex justify-content-center">
+        <div class="col-md-6 d-flex justify-content-center mb-5">
+          <div class="card">
+            <img src="./assets/note-taker.jpg" class="card-img-top" alt="A table with a pair of glasses with short lenses and black 
+            frames resting above an open notebook with a pen laying on it and the word 'notes' written at the top of the page">
+            <div class="card-body">
+              <h5 class="card-title">Note Taker</h5>
+              <p class="card-text">An application that can be used for writing notes which can be saved and deleted.</p>
+              <a href="#" class="repo-link"><i class="far fa-folder-open"></i> Repo</a>
+              <a href="#" class="app-link"><i class="fas fa-link"></i> App</a>
             </div>
-            <h1 class="text-center projectTitle">Day Planner</h1>
           </div>
         </div>
-        <div class="col-lg-4 d-flex justify-content-center">
-          <div>
-            <div class="animated-item mb-2">
-              <img src="./assets/todo-list.png" class="portfolioPic">
-              <a href="https://github.com/cwedwards9/todo-list" target="_blank"><i class="fas fa-folder"></i></a>
+        <div class="col-md-6 d-flex justify-content-center mb-5">
+          <div class="card">
+            <img src="./assets/company-mgmt.jpg" class="card-img-top" alt="Side shot of two people's arms with an open laptop in front of each of them. A piece of paper with notes sits between the two of them. 
+            There are two pens next to the paper. The closer person holding a pen in their left hand and the farther person holding a pencil in their hand.">
+            <div class="card-body">
+              <h5 class="card-title">Company Management System</h5>
+              <p class="card-text">A command line application that manages a company's departments, employees, and roles.</p>
+              <a href="#" class="repo-link"><i class="far fa-folder-open"></i> Repo</a>
+              <a href="#" class="app-link"><i class="fas fa-link"></i> App</a>
             </div>
-            <h1 class="text-center projectTitle">Todo List</h1>
           </div>
         </div>
       </section>
-      
+
     </main>
 
     
