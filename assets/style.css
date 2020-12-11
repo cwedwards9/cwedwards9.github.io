@@ -128,7 +128,7 @@ main.contact label {
     width: 45vw;
     border: 1px solid #00B4DB;
     border-radius: 4px;
-    transition: transform 0.15s ease-in;
+    transition: transform 0.25s ease-in;
 }
 
 @media (max-width: 768px){
@@ -138,12 +138,16 @@ main.contact label {
 }
 
 .card:hover {
-    transform: scale(1.01)
+    transform: scale(1.05)
 }
 
 .card-body {
     color: white;
     background-color: #2A2E35;
+}
+
+.card-text {
+    opacity: 65%;
 }
 
 
