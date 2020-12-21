@@ -100,13 +100,13 @@ nav a {
 }
 
 .hero-content-area h1 {
-    font-size: 60px;
+    font-size: 55px;
     font-family:"Open Sans", sans-serif;
     margin-bottom: 20px;
 }
 
 .hero-content-area h3 {
-    font-size: 35px;
+    font-size: 30px;
     font-family:"Open Sans", sans-serif;
     margin-bottom: 45px;
 }
@@ -140,19 +140,14 @@ nav a {
 
 /* About Section */
 #about {
-    padding-bottom: 25px;
+    padding-bottom: 75px;
 }
 
 .aboutPar {
-    font-size: 20px;
-    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
     margin-top: 20px;
     line-height: 2.25;
-}
-
-.aboutTitle {
-    font-family: 'Nunito', sans-serif;
-    font-size: 30px;
 }
 
 img.aboutPics {
@@ -160,12 +155,6 @@ img.aboutPics {
     width: 300px;
     border-radius: 10px;
 }
-
-/* @media (max-width: 400px){
-    img.aboutPics {
-        width: 300px;
-    }
-} */
 
 
 
