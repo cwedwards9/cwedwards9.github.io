@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
   <head>
     <!-- Required meta tags -->
@@ -18,7 +18,8 @@
     <link rel="stylesheet" type="text/css" href="./assets/style.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&display=swap" rel="stylesheet">
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -26,133 +27,154 @@
     <title>About Chase</title>
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-dark navbar-expand-sm mb-4">
-          <a href="index.html" class="navbar-brand py-3"><i class="fas fa-user-circle mr-2"></i>Chase Edwards</a>
+      <nav class="navbar navbar-dark navbar-expand-sm">
+          <a href="#about" class="navbar-brand py-3 ml-5"><i class="fas fa-user-circle mr-2"></i>Chase Edwards</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto mr-5">
                 <li class="nav-item mt-1 ml-3">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item mt-1 ml-3">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
                 <li class="nav-item mt-1 ml-3">
                   <a class="nav-link" href="./assets/chase-w-edwards-resume.pdf" target="_blank">Resume</a>
                 </li>
-              </ul>
+            </ul>
           </div>
       </nav>
+
+
+    <header class="hero">
+      <div class="background-image"></div>
+      <div class="hero-content-area">
+        <h1>Hello! I'm Chase.</h1>
+        <h3>Full-Stack Web Developer</h3>
+        <a href="#portfolio">SEE MY PROJECTS</a>
+      </div>
     </header>
-    <!-- Main content, sections about me -->
-    <main class="container">
-      <section class="row d-flex mt-5 justify-content-around aboutSec">
-        <div class="col-lg-6 mb-3 d-flex flex-column justify-content-center">
-          <h2 class="aboutTitle text-center">Hello! 👋 I'm Chase.</h2>
-          <p class="aboutPar">I am a Full Stack Web Developer with a background in Information Systems and a dedication to
-            continuous learning. I am always finding creative and efficient ways to solve issues. I am known among 
-            staff and peers as a hard worker with a strong attention to detail. I am currently studying Full Stack Web 
-            Development at Case Western Reserve University. I am learning React in my free time.
-          </p>
+
+    <main>
+      <section id="about">
+        <div class="row d-flex justify-content-center mb-2">
+          <div class="col-md-8 text-center">
+            <h1 class="sectionTitle">About Me</h1>
+            <hr>
+          </div>
         </div>
-        <div class="col-lg-6 d-flex justify-content-center align-items-center">
-          <img src="./assets/professional-pic.jpg" class="aboutPics" alt="A professional picture of Chase in a suit">
+
+        <div class="row d-flex mt-2 justify-content-center aboutSec">
+          <div class="col-lg-6 mb-3 d-flex flex-column justify-content-center">
+            <p class="aboutPar">I am a Full Stack Web Developer with a background in Information Systems and a dedication to
+              continuous learning. I am always finding creative and efficient ways to solve issues. I am known among 
+              staff and peers as a hard worker with a strong attention to detail. I am currently studying Full Stack Web 
+              Development at Case Western Reserve University. I am learning React in my free time.
+            </p>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-center align-items-center">
+            <img src="./assets/professional-pic.jpg" class="aboutPics" alt="A professional picture of Chase in a suit">
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center aboutSec">
+          <div class="col-lg-4 d-flex justify-content-center align-items-center order-2 order-lg-1">
+              <img src="./assets/college-grad.jpg" class="aboutPics" alt="A picture of Chase at college graduation in cap and gown">
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center order-1 order-lg-2">
+            <p class="aboutPar">I graduated from The University of Akron in December of 2019 with a BBA in Information 
+              Systems Management. This is where I was first exposed to programming as well as data structures. Although they
+              were more introductory courses to help compliment my business and data analytics side, they opened my eyes to 
+              the world of technology and from there my interest in software and web development grew.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section class="row d-flex justify-content-around aboutSec">
-        <div class="col-lg-6 d-flex justify-content-center align-items-center order-2 order-lg-1">
-            <img src="./assets/college-grad.jpg" class="aboutPics" alt="A picture of Chase at college graduation in cap and gown">
-        </div>
-        <div class="col-lg-6 mb-3 d-flex flex-column justify-content-center order-1 order-lg-2">
-          <h2 class="aboutTitle text-center">Education 🎓</h2>
-          <p class="aboutPar">I graduated from The University of Akron in December of 2019 with a BBA in Information 
-            Systems Management. This is where I was first exposed to programming as well as data structures. Although they
-            were more introductory courses to help compliment my business and data analytics side, they opened my eyes to 
-            the world of technology and from there my interest in software and web development grew.
-          </p>
-        </div>
-      </section>
 
-      <section class="row d-flex justify-content-center mb-4">
+
+
+      <section id="portfolio">
+        <div class="row d-flex justify-content-center mb-4">
+          <div class="col-md-8 text-center">
+            <h1 class="mb-4 sectionTitle">My Projects</h1>
+            <p>This portfolio showcases the latest projects that I have completed. Click on a project's link to go to the 
+              repository or to see the deployed version.
+            </p>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 d-flex justify-content-center mb-5">
+            <div class="card">
+              <img src="./assets/budget.jpg" class="card-img-top" alt="A person's hand holding a pencil while typing on a calculator">
+              <div class="card-body">
+                <h5 class="card-title">Budget Tracker <i class="fas fa-star"></i></h5>
+                <p class="card-text">A full-stack app used for tracking monthly transactions and bills to pay.</p>
+                <a href="https://github.com/cwedwards9/budget-tracker" target="_blank" class="repo-link"><i class="far fa-folder-open"></i> Repo</a>
+                <a href="https://smart-money-app.herokuapp.com/" target="_blank" class="app-link"><i class="fas fa-link"></i> App</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center mb-5">
+            <div class="card">
+              <img src="./assets/burger.jpg" class="card-img-top" alt="A close up of a burger with the following ingredients in order from top to bottom: a sesame seed bun, sauce, 
+              cheese, two patties, pickles, onions, tomato, lettuce, and more sauce, bottom bun on a clean wood table.">
+              <div class="card-body">
+                <h5 class="card-title">Burger Log</h5>
+                <p class="card-text">An app that logs a list of burgers the user wants to eat and a list of burgers that have been eaten.</p>
+                <a href="https://github.com/cwedwards9/burger-logger" target="_blank" class="repo-link"><i class="far fa-folder-open"></i> Repo</a>
+                <a href="https://burger-logging-app.herokuapp.com/" target="_blank" class="app-link"><i class="fas fa-link"></i> App</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6 d-flex justify-content-center mb-5">
+            <div class="card">
+              <img src="./assets/note-taker.jpg" class="card-img-top" alt="A table with a pair of glasses with short lenses and black 
+              frames resting above an open notebook with a pen laying on it and the word 'notes' written at the top of the page">
+              <div class="card-body">
+                <h5 class="card-title">Note Taker</h5>
+                <p class="card-text">An application for writing and saving notes that can be accessed anywhere.</p>
+                <a href="https://github.com/cwedwards9/note-taker" target="_blank" class="repo-link"><i class="far fa-folder-open"></i> Repo</a>
+                <a href="https://note-taker-web.herokuapp.com/" target="_blank" class="app-link"><i class="fas fa-link"></i> App</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex justify-content-center mb-5">
+            <div class="card">
+              <img src="./assets/company-mgmt.jpg" class="card-img-top" alt="Side shot of two people's arms with an open laptop in front of each of them. A piece of paper with notes sits between the two of them. 
+              There are two pens next to the paper. The closer person holding a pen in their left hand and the farther person holding a pencil in their hand.">
+              <div class="card-body">
+                <h5 class="card-title">Company Management System</h5>
+                <p class="card-text">A command line application that manages a company's departments, employees, and roles.</p>
+                <a href="https://github.com/cwedwards9/company-management-system" target="_blank" class="repo-link"><i class="far fa-folder-open"></i> Repo</a>
+                <a href="https://drive.google.com/file/d/1BU9_LclsRT8CQ1J9YBv5TJ4d8kzAKQkl/view" target="_blank" class="app-link"><i class="fas fa-link"></i> App</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact">
+      <div class="row d-flex justify-content-center mb-4">
         <div class="col-md-8 text-center">
-          <h1 class="mb-4 pageTitle">Portfolio</h1>
-          <p>This portfolio showcases the latest projects that I have completed. Click on a project's link to go to the 
-            repository or to see the deployed version.
-          </p>
-          <hr>
-        </div>
-      </section>
-
-      <section class="row d-flex justify-content-center">
-        <div class="col-md-6 d-flex justify-content-center mb-5">
-          <div class="card">
-            <img src="./assets/budget.jpg" class="card-img-top" alt="A person's hand holding a pencil while typing on a calculator">
-            <div class="card-body">
-              <h5 class="card-title">Budget Tracker <i class="fas fa-star"></i></h5>
-              <p class="card-text">A full-stack app used for tracking monthly transactions and bills to pay.</p>
-              <a href="https://github.com/cwedwards9/budget-tracker" target="_blank" class="repo-link"><i class="far fa-folder-open"></i> Repo</a>
-              <a href="https://smart-money-app.herokuapp.com/" target="_blank" class="app-link"><i class="fas fa-link"></i> App</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 d-flex justify-content-center mb-5">
-          <div class="card">
-            <img src="./assets/burger.jpg" class="card-img-top" alt="A close up of a burger with the following ingredients in order from top to bottom: a sesame seed bun, sauce, 
-            cheese, two patties, pickles, onions, tomato, lettuce, and more sauce, bottom bun on a clean wood table.">
-            <div class="card-body">
-              <h5 class="card-title">Burger Log</h5>
-              <p class="card-text">An app that logs a list of burgers the user wants to eat and a list of burgers that have been eaten.</p>
-              <a href="https://github.com/cwedwards9/burger-logger" target="_blank" class="repo-link"><i class="far fa-folder-open"></i> Repo</a>
-              <a href="https://burger-logging-app.herokuapp.com/" target="_blank" class="app-link"><i class="fas fa-link"></i> App</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="row d-flex justify-content-center">
-        <div class="col-md-6 d-flex justify-content-center mb-5">
-          <div class="card">
-            <img src="./assets/note-taker.jpg" class="card-img-top" alt="A table with a pair of glasses with short lenses and black 
-            frames resting above an open notebook with a pen laying on it and the word 'notes' written at the top of the page">
-            <div class="card-body">
-              <h5 class="card-title">Note Taker</h5>
-              <p class="card-text">An application for writing and saving notes that can be accessed anywhere.</p>
-              <a href="https://github.com/cwedwards9/note-taker" target="_blank" class="repo-link"><i class="far fa-folder-open"></i> Repo</a>
-              <a href="https://note-taker-web.herokuapp.com/" target="_blank" class="app-link"><i class="fas fa-link"></i> App</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 d-flex justify-content-center mb-5">
-          <div class="card">
-            <img src="./assets/company-mgmt.jpg" class="card-img-top" alt="Side shot of two people's arms with an open laptop in front of each of them. A piece of paper with notes sits between the two of them. 
-            There are two pens next to the paper. The closer person holding a pen in their left hand and the farther person holding a pencil in their hand.">
-            <div class="card-body">
-              <h5 class="card-title">Company Management System</h5>
-              <p class="card-text">A command line application that manages a company's departments, employees, and roles.</p>
-              <a href="https://github.com/cwedwards9/company-management-system" target="_blank" class="repo-link"><i class="far fa-folder-open"></i> Repo</a>
-              <a href="https://drive.google.com/file/d/1BU9_LclsRT8CQ1J9YBv5TJ4d8kzAKQkl/view" target="_blank" class="app-link"><i class="fas fa-link"></i> App</a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-      <section class="row d-flex justify-content-center mb-4">
-        <div class="col-md-8 text-center">
-          <h1 class="mb-4 pageTitle">Contact Me!</h1>
+          <h1 class="mb-4 sectionTitle">Contact Me!</h1>
           <p>Feel free to reach out to me! I am always open to meeting new people and making new professional connections!
           </p>
           <hr>
         </div>
-      </section>
+      </div>
       <!-- Contact form -->
       <form>
-        <section class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center">
           <div class="col-md-4 mb-3">
             <label for="name">Name:</label>
             <input type="text" id="name" class="form-control mt-1">
@@ -161,30 +183,32 @@
             <label for="email">Email:</label>
             <input type="email" id="email" class="form-control mt-1">
           </div>
-        </section>
+        </div>
   
-        <section class="row d-flex justify-content-center mb-3">
+        <div class="row d-flex justify-content-center mb-3">
           <div class="col-md-8">
             <label for="subject">Subject:</label>
             <input type="text" id="subject" class="form-control mt-1">
           </div>
-        </section>
+        </div>
   
-        <section class="row d-flex justify-content-center mb-4">
+        <div class="row d-flex justify-content-center mb-4">
           <div class="col-md-8">
             <label for="message">Message:</label>
             <textarea id="message" class="form-control mt-1" rows="3"></textarea>
           </div>
-        </section>
+        </div>
   
-        <section class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center">
           <button id="btnContact" type="button" class="btn btn-outline-primary">Let's Talk</button>
-        </section>
+        </div>
       </form>
+    </section>
+
     </main>
 
   <!-- Footer with links to connect with me online -->
-  <footer class="text-center py-4 mt-5">
+  <footer class="text-center py-4">
     <div class="row justify-content-between" id="footerRow">
       <div class="col-md-3 mt-2">
         <p>&copy; 2020 Chase Edwards</p>
