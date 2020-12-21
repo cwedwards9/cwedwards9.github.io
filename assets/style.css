@@ -10,6 +10,11 @@ body {
     margin-top: 50px;
 }
 
+.sectionDesc {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+
 hr {
     width: 275px;
     height: 3px;
@@ -117,6 +122,18 @@ nav a {
     text-decoration: none;
 }
 
+@media (max-width: 800px) {
+    .hero-content-area {
+        width: 300px;
+        margin-top: 75px;
+    }
+    .hero h1 {
+        font-size: 40px;
+    }
+    .hero h3 {
+        font-size: 25px;
+    }
+}
 
 
 
@@ -144,11 +161,11 @@ img.aboutPics {
     border-radius: 10px;
 }
 
-@media (max-width: 400px){
+/* @media (max-width: 400px){
     img.aboutPics {
         width: 300px;
     }
-}
+} */
 
 
 
