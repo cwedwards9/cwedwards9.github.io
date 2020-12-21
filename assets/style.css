@@ -1,26 +1,36 @@
 body {
-    background-color: #12181B;
-    color: #FFFFFF
+    background-color: #FFFFFF;
+    color: #12181B
 }
 
-.pageTitle {
-    font-family: 'Lato', sans-serif;
-    font-size: 50px;
+.sectionTitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 50px;
 }
 
 hr {
     width: 275px;
     height: 3px;
     border: 0;
-    background-color: #00B4DB;
+    background-color: #0cb4b4;
     margin-bottom: 35px;
 }
+
+section:not(.hero):nth-child(odd) {
+    background-color: #f5f5f5;
+}
+
+
 
 
 
 /* Navbar */
 nav {
     background-color: #2A2E35;
+    margin-bottom: 0px;
+    height: 12vh;
 }
 
 nav a {
@@ -38,40 +48,86 @@ nav a {
 
 
 
-/* Footer */
-footer {
-    background-color: #2A2E35;
+
+
+/* Banner */
+.hero {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    min-width: 100%;
+    height: 88vh;
+    border: 1px solid #0cb4b4;
 }
 
-footer p {
-    font-family: 'Lato', sans-serif;
-    margin-bottom: 0;
+.hero .background-image {
+    background-image: url(./main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #0cb4b4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 88vh;
+    z-index: -1;
 }
 
-#footerRow {
-    margin-right: 0px;
+.hero-content-area {
+    height: 220px;
+    width: 500px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    opacity: 0;
+    animation: 1s slidefade 1s forwards;
 }
 
-footer a i:hover {
-    opacity: 75%;
+@keyframes slidefade {
+    100% {
+        opacity: 1;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-.fa-linkedin {
-    color: #0A66C2;
+.hero-content-area h1 {
+    font-size: 60px;
+    font-family:"Open Sans", sans-serif;
+    margin-bottom: 20px;
 }
 
-.fa-github-square {
-    color: #141414;
+.hero-content-area h3 {
+    font-size: 35px;
+    font-family:"Open Sans", sans-serif;
+    margin-bottom: 45px;
 }
 
-.fa-file-alt {
-    color: #E7E7E7;
+.hero-content-area a {
+    border: 1px solid #0cb4b4;
+    background-color: #0cb4b4;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 2px;
+}
+.hero-content-area a:hover {
+    text-decoration: none;
 }
 
 
 
-/* Index Page */
+
+
+/* About Section */
+#about {
+    padding-bottom: 25px;
+}
+
 .aboutPar {
+    font-size: 20px;
     font-family: 'Nunito', sans-serif;
     margin-top: 20px;
     line-height: 2.25;
@@ -82,13 +138,9 @@ footer a i:hover {
     font-size: 30px;
 }
 
-.aboutSec {
-    margin-bottom: 75px;
-}
-
 img.aboutPics {
     filter: grayscale(100%);
-    width: 400px;
+    width: 300px;
     border-radius: 10px;
 }
 
@@ -100,35 +152,16 @@ img.aboutPics {
 
 
 
-/* Contact Page */
-main.contact p {
-    font-family: 'Lato', sans-serif;
-    line-height: 1.5;;
+
+
+/* Portfolio Section */
+#portfolio {
+    padding-bottom: 25px;
 }
 
-main.contact label {
-    font-family: 'Lato', sans-serif;
-}
-
-#btnContact {
-    background-color: transparent;
-    color: #00B4DB;
-    border: 1px solid #00B4DB;
-    font-family: 'Lato', sans-serif;
-}
-#btnContact:hover {
-    background-color: #00B4DB;
-    color: white;
-}
-
-
-
-/* Portfolio Page */
 .card {
-    width: 45vw;
-    border: 1px solid #00B4DB;
+    width: 400px;
     border-radius: 4px;
-    transition: transform 0.25s ease-in;
 }
 
 @media (max-width: 768px){
@@ -137,19 +170,14 @@ main.contact label {
     }
 }
 
-.card:hover {
-    transform: scale(1.05)
-}
-
 .card-body {
-    color: white;
-    background-color: #2A2E35;
+    color: #2A2E35;
+    background-color: white;
 }
 
 .card-text {
     opacity: 65%;
 }
-
 
 .repo-link {
     color: #B2BECD;
@@ -180,4 +208,68 @@ main.contact label {
 
 .fa-star {
     color: #FCDC05;
+}
+
+
+
+
+
+/* Contact Section */
+#contact {
+    padding-bottom: 25px;
+}
+
+main.contact p {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;;
+}
+
+main.contact label {
+    font-family: 'Lato', sans-serif;
+}
+
+#btnContact {
+    background-color: transparent;
+    color: #00B4DB;
+    border: 1px solid #00B4DB;
+    font-family: 'Lato', sans-serif;
+}
+#btnContact:hover {
+    background-color: #00B4DB;
+    color: white;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #2A2E35;
+    color: #fff;
+}
+
+footer p {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 0;
+}
+
+#footerRow {
+    margin-right: 0px;
+}
+
+footer a i:hover {
+    opacity: 75%;
+}
+
+.fa-linkedin {
+    color: #0A66C2;
+}
+
+.fa-github-square {
+    color: #141414;
+}
+
+.fa-file-alt {
+    color: #E7E7E7;
 }
