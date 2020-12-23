@@ -46,7 +46,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 100px;
+    padding: 40px 50px;
     animation: 1.5s fadein 1s forwards;
     opacity: 0;
     z-index: 1;
@@ -70,7 +70,14 @@ nav {
 nav li {
     display: inline;
     margin-right: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
     font-family: "Quicksand", sans-serif;
+    transition: 0.2s all ease-in;
+}
+nav li:hover {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0cb4b4;
 }
 
 .brand-name li {
@@ -115,7 +122,7 @@ nav li a:hover {
 .hero-content-area {
     height: 220px;
     width: 500px;
-    margin-top: 200px;
+    margin-top: 300px;
     margin-left: auto;
     margin-right: auto;
     color: white;
@@ -126,7 +133,7 @@ nav li a:hover {
 @keyframes slidefade {
     100% {
         opacity: 1;
-        margin-top: 125px;
+        margin-top: 200px;
         margin-left: auto;
         margin-right: auto;
     }
