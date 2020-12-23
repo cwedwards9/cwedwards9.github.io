@@ -157,11 +157,9 @@ nav li a:hover {
     color: #fff;
     padding: 10px 25px;
     border-radius: 2px;
-    opacity: 90%;
 }
 .hero-content-area a:hover {
     text-decoration: none;
-    opacity: 100%;
 }
 
 @media (max-width: 800px) {
@@ -270,22 +268,24 @@ img.aboutPics {
     display: flex;
     align-items: center;
     width: 800px;
-    height: 500px;
+    height: 450px;
     margin: 0 auto;
-    /* border: 1px solid #0cb4b4; */
     background-color: #0cb4b4;
     border-radius: 5px;
 }
 
 .contact-info {
     width: 500px;
-    height: 425px;
+    height: 375px;
     padding: 15px;
-    /* border: 1px solid red; */
     border-radius: 5px;
     background-color: white;
     position: relative;
     left: -100px;
+}
+
+.contact-info-head {
+    margin-bottom: 20px;
 }
 
 .contact-info ul li {
@@ -294,15 +294,18 @@ img.aboutPics {
     margin-bottom: 25px;
 }
 
+.contact-icon {
+    color: #0cb4b4;
+}
+
 .contact-list {
     margin-bottom: 75px;
 }
 
 form {
     width: 600px;
-    height: 500px;
+    height: 450px;
     margin: 0 auto;
-    /* border: 1px solid black; */
     border-radius: 5px;
     background-color: #0cb4b4;
     padding: 10px;
@@ -313,6 +316,7 @@ form {
 
 form h1 {
     margin-bottom: 25px;
+    text-align: center;
 }
 
 form label {
@@ -324,7 +328,7 @@ form label {
 form input, textarea {
     width: 100%;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid #ececec;
 }
 
 form textarea {
@@ -332,15 +336,22 @@ form textarea {
 }
 
 .form-input {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+}
+
+#btnDiv {
+    display: flex;
+    justify-content: center;
 }
 
 #btnContact {
     background-color: white;
     color: #0cb4b4;
     border: 1px solid #0cb4b4;
-    font-family: "Quicksand", sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 0 auto;
+    padding: 5px 20px;
+    border-radius: 5px;
 }
 #btnContact:hover {
     background-color: #ececec;
@@ -348,38 +359,29 @@ form textarea {
 
 @media (max-width: 1000px) {
     .contact-card {
-        /* 800 */
         width: 600px;
     }
     .contact-info {
-        /* 500 */
         width: 350px;
     }
     form {
-        /* 600 */
         width: 400px;
     }
     .contact-info ul li {
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
 @media (max-width: 800px) {
     .contact-card {
-        /* 800 */
         width: 600px;
     }
     .contact-info {
-        /* 500 */
         width: 300px;
         left: -50px;
     }
     form {
-        /* 600 */
         width: 350px;
-    }
-    .contact-info ul li {
-        font-size: 12px;
     }
 }
 
@@ -392,11 +394,16 @@ form textarea {
     .contact-info {
         width: 350px;
         left: 0px;
+        border-radius: 0;
+        text-align: center;
     }
     form {
-        /* 600 */
         width: 350px;
         left: 0px;
+        border-radius: 0;
+    }
+    .contact-info ul li {
+        font-size: 20px;
     }
 }
 
