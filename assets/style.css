@@ -106,11 +106,11 @@ nav li a:hover {
 }
 
 .hero .background-image {
-    background-image: url(./main3.jpg);
+    background-image: url(./main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: #0cb4b4;
+    background-color: white;
     position: absolute;
     top: 0;
     left: 0;
@@ -209,33 +209,19 @@ img.aboutPics {
     border-radius: 4px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 760px){
     .card {
         width: 90vw;
     }
 }
 
 .card-body {
-    color: #2A2E35;
+    color: black;
     background-color: white;
 }
 
 .card-text {
-    opacity: 65%;
-}
-
-.repo-link {
-    color: black;
-    border: 1px solid #B2BECD;
-    background-color: #B2BECD;
-    border-radius: 3px;
-    padding: 3px 5px;
-    margin-right: 5px !important;
-}
-.repo-link:hover {
-    color: black;
-    opacity: 90%;
-    text-decoration: none;
+    color: #2A2E35;
 }
 
 .app-link {
@@ -244,10 +230,24 @@ img.aboutPics {
     color: #fff;
     border-radius: 3px;
     padding: 3px 7px;
+    margin-right: 5px !important;
 }
 .app-link:hover {
     color: #fff;
     opacity: 80%;
+    text-decoration: none;
+}
+
+.repo-link {
+    color: black;
+    border: 1px solid #ececec;
+    background-color: #ececec;
+    border-radius: 3px;
+    padding: 3px 5px;
+}
+.repo-link:hover {
+    color: black;
+    opacity: 90%;
     text-decoration: none;
 }
 
