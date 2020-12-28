@@ -441,3 +441,42 @@ footer a i:hover {
 .fa-file-alt {
     color: #E7E7E7;
 }
+
+
+
+
+
+/* Landscape View */
+@media only screen and (max-height: 360px) and (orientation: landscape) { 
+    nav {
+        flex-direction: row;
+        padding: 40px 10px;
+    }
+
+    .hero-content-area {
+        margin-top: 50px;
+    }
+    @keyframes slidefade {
+        100% {
+            opacity: 1;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .hero-content-area h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    
+    .hero-content-area h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .hero-content-area a {
+        padding: 10px 15px;
+    }
+
+}
