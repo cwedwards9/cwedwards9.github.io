@@ -165,7 +165,7 @@ nav li a:hover {
 @media (max-width: 800px) {
     .hero-content-area {
         width: 300px;
-        margin-top: 75px;
+        /* margin-top: 75px; */
     }
     .hero h1 {
         font-size: 38px;
@@ -447,14 +447,18 @@ footer a i:hover {
 
 
 /* Landscape View */
-@media only screen and (max-height: 360px) and (orientation: landscape) { 
+@media only screen and (max-height: 400px) and (orientation: landscape) { 
     nav {
         flex-direction: row;
         padding: 40px 10px;
     }
+    nav li {
+        margin-right: 10px;
+    }
 
     .hero-content-area {
         margin-top: 50px;
+        animation: 1s slidefade 1s forwards;
     }
     @keyframes slidefade {
         100% {
@@ -476,7 +480,7 @@ footer a i:hover {
     }
     
     .hero-content-area a {
-        padding: 10px 15px;
+        padding: 10px 10px;
     }
 
 }
