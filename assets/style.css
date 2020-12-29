@@ -267,31 +267,35 @@ img.aboutPics {
 .contact-card {
     display: flex;
     align-items: center;
-    width: 800px;
+    width: 60%;
     height: 450px;
     margin: 0 auto;
     background-color: #0cb4b4;
     border-radius: 5px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
 }
 
 .contact-info {
-    width: 500px;
+    width: 50%;
     height: 375px;
-    padding: 15px;
+    padding: 5px;
     border-radius: 5px;
     background-color: white;
     position: relative;
     left: -100px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
 }
 
 .contact-info-head {
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .contact-info ul li {
-    font-size: 20px;
+    font-size: 18px;
     font-family: "Quicksand", sans-serif;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .contact-icon {
@@ -302,8 +306,14 @@ img.aboutPics {
     margin-bottom: 75px;
 }
 
+.contact-socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 form {
-    width: 600px;
+    width: 50%;
     height: 450px;
     margin: 0 auto;
     border-radius: 5px;
@@ -315,20 +325,20 @@ form {
 }
 
 form h1 {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 form label {
     font-family: "Quicksand", sans-serif;
     display: block;
-    margin-left: auto;
 }
 
 form input, textarea {
     width: 100%;
     border-radius: 5px;
     border: 1px solid #ececec;
+    outline: none;
 }
 
 form textarea {
@@ -357,22 +367,8 @@ form textarea {
     background-color: #ececec;
 }
 
-@media (max-width: 1000px) {
-    .contact-card {
-        width: 600px;
-    }
-    .contact-info {
-        width: 350px;
-    }
-    form {
-        width: 400px;
-    }
-    .contact-info ul li {
-        font-size: 16px;
-    }
-}
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .contact-card {
         width: 600px;
     }
@@ -385,7 +381,7 @@ form textarea {
     }
 }
 
-@media (max-width: 675px) {
+@media (max-width: 700px) {
     .contact-card {
         width: 350px;
         height: 950px;
