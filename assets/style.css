@@ -207,6 +207,7 @@ img.aboutPics {
 .card {
     width: 450px;
     border-radius: 4px;
+    box-shadow: 0 19px 35px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 760px){
